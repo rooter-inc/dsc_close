@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://www.dscnet.jp/ -->
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <script type="text/javascript" src="./files/5eb57a669e"></script>
+    <script src="./files/nr-1016.min.js"></script>
+    <script id="facebook-jssdk" src="./files/sdk.js"></script>
+    <script async="" src="./files/analytics.js"></script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5eb57a669e","applicationID":"4541782","transactionName":"J1heRktdVV9SFhxKQwVDWVFmQlhUUhccTVgU","queueTime":11,"applicationTime":125,"ttGuid":"","agentToken":null,"agent":""}</script>
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>DSC/自衛隊応援クラブ</title>
+    <meta content="DSC/自衛隊応援クラブは、自衛隊の活動を一般に広めるために設立された自衛隊ファンクラブです。" name="description">
+    <meta content="dsc, defence forces support club, 自衛隊, ファンクラブ, そうかえん, 総合火力演習" name="keywords">
+    <meta content="DSC/自衛隊応援クラブ" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="https://www.dscnet.jp/" property="og:url">
+    <meta content="DSC/自衛隊応援クラブ" property="og:site_name">
+    <meta content="DSC/自衛隊応援クラブは、自衛隊の活動を一般に広めるために設立された自衛隊ファンクラブです。" property="og:description">
+    <meta content="ja_JP" property="og:locale">
+    <link data-turbolinks-track="true" href="./files/application-d881e4d83759e3dbc1d5d589cc71bcf9.css" media="all" rel="stylesheet">
+    <script data-turbolinks-track="true" src="./files/application-c69dd50d7ced5cdda5a2a0676f074891.js"></script>
+    <script charset="UTF-8" src="./files/ajaxzip3.js"></script>
+    <link href="https://www.dscnet.jp/assets/favicon-c6363d3a11fb0b5d80568577a5926eb6.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <meta content="authenticity_token" name="csrf-param">
+    <meta content="kJVTi6TS1HhjJ8Y64UAoG3QS1GZ5heKs0Yj/qZMIW9g=" name="csrf-token">
+    <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style>
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style>
+  </head>
+  <body>
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-52165633-1', 'www.dscnet.jp');
+ga('send', 'pageview');
+</script>
+    <div id="fb-root" class=" fb_reset">
+      <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+        <div></div>
+      </div>
+      <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+        <div>
+          <iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./files/YGoENyUbMBG.html" style="border: none;"></iframe>
+        </div>
+      </div>
+    </div>
+    <script>
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=1503620809868051&version=v2.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+    <div class="container-fluid">
+      <h1 style=text-align:center;font-weight:600;color:red;>新規会員登録キャンペーンは終了いたしました。</h4>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h1 class="text-hide">DSC/自衛隊応援クラブ入会キャンペーン
+            <img alt="Banner lg" class="img-responsive" style="margin:0 auto;" src="./files/banner.png">
+          </h1>
+          <!-- <section>
+            <h1 class="hidden">DSC/自衛隊応援クラブ入会キャンペーン概要</h1>
+            <div class="text-center well well-lg">
+              <p>
+                <small>
+                  <a href="https://www.dscnet.jp/terms" target="_blank">利用規約,</a>
+                  <a href="https://www.dscnet.jp/privacy" target="_blank">プライバシーポリシー</a>に同意して
+                </small>
+              </p>
+              <p class="hidden-xs hidden-sm">
+                <a class="btn btn-danger btn-lg" href="https://www.dscnet.jp/users/sign_up">DSC/自衛隊応援クラブに入会する</a>
+              </p>
+              <p class="hidden-lg hidden-md">
+                <a class="btn btn-danger btn-lg" href="https://www.dscnet.jp/users/sign_up">入会手続きに進む</a>
+              </p>
+            </div>
+          </section> -->
+          <!-- <section id="apply-flow">
+            <div class="row">
+              <div class="hidden-lg hidden-md">
+                <div class="col-lg-12">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4>応募の流れ</h4>
+                    </div>
+                    <div class="panel-body">
+                      <ol>
+                        <li>
+                          <h3>入会案内の確認</h3>
+                          <p>入会にあたり、以下に記載されている要項をよくお読みの上お申込みください。</p>
+                        </li>
+                        <li>
+                          <h3>会員情報の登録</h3>
+                          <p>会員情報をご入力ください。既にご入会済みの方は省略可能です。</p>
+                        </li>
+                        <li>
+                          <h3>年会費のお支払い</h3>
+                          <p>クレジットカードで年会費をお支払いください。ご入会済みの方は不要です。</p>
+                        </li>
+                        <li>
+                          <h3>入会完了！</h3>
+                          <p>ありがとうございます、これで入会完了です。お疲れ様でした！
+                            <br>
+                          </p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden-xs hidden-sm text-center">
+                <div class="col-lg-3">
+                  <div class="well">
+                    <i class="fa fa-file-text-o fa-3x"></i>
+                    <h3>入会案内の確認</h3>
+                    <p>入会にあたり、以下に記載されている要項をよくお読みの上お申込みください。</p>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="well">
+                    <i class="fa fa-user fa-3x"></i>
+                    <h3>会員情報の登録</h3>
+                    <p>会員情報をご入力ください。既にご入会済みの方は省略可能です。</p>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="well">
+                    <i class="fa fa-cny fa-3x"></i>
+                    <h3>年会費のお支払い</h3>
+                    <p>クレジットカードで年会費をお支払いください。ご入会済みの方は不要です。</p>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="well">
+                    <i class="fa fa-thumbs-o-up fa-3x"></i>
+                    <h3>入会完了！</h3>
+                    <p>ありがとうございます、これで入会完了です。お疲れ様でした！
+                      <br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> -->
+          <section>
+            <div class="panel panel-default">
+              <!-- <div class="panel-heading">
+                <h2 style=text-align:center;font-weight:600;>新規会員登録キャンペーンは終了いたしました。</h4>
+              </div> -->
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-3 text-center">
+                    <img alt="Dsc logo" src="./files/dsc_logo-2060d17968007d21f4417fc4a749e7a9.png" width="70%">
+                  </div>
+                  <div class="col-lg-9" style="font-weight:800;">
+                    <p style="margin-left:40px;margin-top:20px;">ご好評いただきました新規会員登録キャンペーンは</p>
+                    <p style="margin-left:40px"><span style="color:red">2017年1月を持ちまして終了いたしました。</span></p>
+                    <p style="margin-left:40px">たくさんのご利用ありがとうございます </p>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <section>
+                      <h3 style=text-align:center;font-weight:600;>新規会員登録は以下の公式サイトで対応しております。</h3>
+                      <h3 style=text-align:center;><a href="http://www.dsc.or.jp/" style="font-size:24px;">一般社団法人DSC</a></h3>
+                      <h3 style=text-align:center;font-weight:600;>今後とも引き続きよろしくお願い致します。</h3>
+                      <!-- <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <th>正式名称</th>
+                            <td>一般社団法人DSC
+                              <br>(Defence Forces Support Club, 自衛隊応援クラブ)
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>理事長</th>
+                            <td>夏川和也</td>
+                          </tr>
+                          <tr>
+                            <th>公式サイト</th>
+                            <td>http://www.dsc.or.jp/</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section> -->
+                    <!-- <section>
+                      <h3>会費</h3>
+                      <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <th>入会金</th>
+                            <td>無料</td>
+                          </tr>
+                          <tr>
+                            <th>年会費</th>
+                            <td>3,000円/年(税別)</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                    <section id="member-profit">
+                      <h3>入会特典</h3>
+                      <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <th>会員サービス</th>
+                            <th>各種行事参加のご案内</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <ul>
+                                <li>会報誌「自衛隊応援クラブ」の配布</li>
+                                <li>各種行事、イベントの告知・自衛隊OBによる研修会</li>
+                                <li>自衛隊OB・各連携組織とのコラボによるセミナー等</li>
+                                <li>サバイバルゲーム大会への参加</li>
+                              </ul>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>自衛隊・部隊の見学</li>
+                                <li>米軍基地見学</li>
+                                <li>防衛産業工場見学</li>
+                                <li>体験入隊(2~3泊)</li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                    <section>
+                      <h3>入会規約</h3>
+                      <div class="table-bordered">
+                        <div id="dsc_terms">【第1条】会員
+                          <br>(1)会員：この法人の目的に賛同して入会した個人又は法人
+                          <br>(2)賛助会員：この法人の事業を賛助するあめに入会した個人又は法人
+                          <br>(3)名誉会員：この法人に功労のあった者又は団体で、理事会によって推薦された個人又は法人
+                          <br>
+                          <br>【第2条】入会資格
+                          <br>(1)原則として13歳以上で日本国籍を有するもの
+                          <br>(2)本会の趣旨をよく理解し、本会の主催運営する活動・行事に積極的に参加できるもの
+                          <br>(3)本会が入会を認めたもの
+                          <br>
+                          <br>【第3条】年会費
+                          <br>(1)法人会員： 10,000円/1口(税別)
+                          <br>(2)個人会員： 3,000円(税別)
+                          <br>
+                          <br>【第4条】禁止事項
+                          <br>会員に提供される会員情報その他を本会の許可なく第三者（他人または他の団体）に譲渡または配布・閲覧することを禁じます。
+                          <br>また営利目的で、会の名称および情報を使用することも禁じます。
+                          <br>
+                          <br>【第5条】退会処分
+                          <br>会員が以下の何れかの項目に該当する場合、本会は会員に事前に何等通知または催告することなく即時退会処分することができるものとします。
+                          <br>●入会時に虚偽の申告をした場合
+                          <br>●本規約また会則のいずれかに違反した場合
+                          <br>●その他、本会に不利益をもたらすような行為をした場合
+                          <br>（悪質と認められる会員の場合、個人名または企業、団体名を公表する場合もあり）
+                          <br>
+                          <br>【第6条】退会手続き
+                          <br>入会途中で退会する場合、いかなる理由があってもお支払い頂いた年会費の払い戻しは致しません。
+                          <br>また入会期間終了後、退会手続きを行わない限り自動的に次年度へ更新処理となります。
+                          <br>会費未納者は、自動退会の対象者となります。（会費納入期限を過ぎ6ヶ月を経過）
+                          <br>
+                          <br>【第7条】変更の届出
+                          <br>会員は住所や氏名、電子メールアドレス等本会への届出内容に変更があった場合には速やかに変更の届出を行うものとします。
+                          <br>
+                          <br>【第8条】規約の変更
+                          <br>本会は会員の了承を得ることなく本規約を随時変更することができるものとします。
+                          <br>
+                          <br>【第9条】反社会的勢力について
+                          <br>(1)本会入会に際し、会員本人が暴力団、暴力団員、暴力団準構成員、暴力団員でなくなった時から5年を経過しない者、暴力団関係企業、総会屋、政治活動・宗教活動・社会運動標榜ゴロ、特殊知能暴力集団等の反社会的勢力（以下「反社会的勢力」という）に該当しないことを表明し、かつ将来にわたっても該当しないことを確約する。
+                          <br>(2)本会が会員に対し前項に該当するか否かを判定するために調査を要すると判断した場合、本会の求めに応じてその調査に協力し、これに必要と本会が判断する資料を提出しなければならない。
+                          <br>(3)本会会員が反社会的勢力に属すると判明した場合、催告その他の手続きを要すること無く、本件契約を即時解除することができる。
+                          <br>(4)本会が前項の規定により、本件契約を解除した場合には、本会はこれによる会員の損害を賠償する責を負わない。
+                          <br>(5)本件契約を解除した場合、本会から会員に対する損害賠償請求を妨げない。
+                          <br>
+                          <br>※個人情報の使用・開示について※
+                          <br>当法人は収集した会員の個人情報を、法人運営以外の目的で使用すること及び正当な理由がある場合を除き本人の同意なしに第三者に開示・提供することはありません。
+                          <br>
+                          <br>
+                          <br>
+                        </div>
+                      </div>
+                    </section> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- <section>
+            <div class="well well-lg text-center">
+              <small>
+                <a href="https://www.dscnet.jp/terms" target="_blank">利用規約,</a>
+                <a href="https://www.dscnet.jp/privacy" target="_blank">プライバシーポリシー</a>に同意して
+              </small>
+              <p class="hidden-xs hidden-sm">
+                <a class="btn btn-danger btn-lg" href="https://www.dscnet.jp/users/sign_up">DSC/自衛隊応援クラブに入会する</a>
+              </p>
+              <p class="hidden-lg hidden-md">
+                <a class="btn btn-danger btn-lg" href="https://www.dscnet.jp/users/sign_up">入会手続きに進む</a>
+              </p>
+            </div>
+          </section> -->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container text-center">
+        <small>Copyright &#169; DSC 2014 All Rights Reserved.</small>
+        <!-- <ul class="list-inline">
+          <li>
+            <a href="https://www.dscnet.jp/">キャンペーントップ</a>
+          </li>
+          <li>
+            <a href="https://www.dscnet.jp/terms" target="_blank">利用規約</a>
+          </li>
+          <li>
+            <a href="https://www.dscnet.jp/privacy" target="_blank">プライバシーポリシー</a>
+          </li>
+          <li>
+            <a href="https://www.dscnet.jp/tokusho" target="_blank">特定商取引法に基づく表示</a>
+          </li>
+        </ul> -->
+      </div>
+    </footer>
+  </body>
+</html>
